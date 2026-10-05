@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Images/Book_41766.ico">
+    <title>Learning to Program</title>
+    <link rel="stylesheet" href="Styles/book.css">
+    <style>
+      /* Styles to ensure SVG illustrations make better use of space */
+      .illustration {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px 0;
+      }
+      .illustration svg {
+        width: 85%;
+        max-height: 120px;
+        height: auto;
+      }
+    </style>
+</head>
+<body>
+  <div class="book-container">
+    <div class="book" id="book">
+
+      <!-- SHEET 1 (Pages 1 and 2) -->
+      <div class="page" style="z-index: 15;">
+        <div class="front cover-front">
+          <div class="illustration" style="width: 120px; height: 120px; margin: 0 auto;">
+            <svg viewBox="0 0 100 100" style="width: 100%; height: 100%;">
+              <polygon points="50,10 63,38 93,38 68,56 78,86 50,68 22,86 32,56 7,38 37,38" fill="#e2c08d"/>
+            </svg>
+          </div>
+          <h1>Learning to Program</h1>
+          <p class="author">Machuca Vera Natalia</p>
+          <p class="hint" style="margin-top: 20px;">Tap to open</p>
+        </div>
+        <div class="back">
+          <h2>GENERAL INDEX</h2>
+          <p>Table of Contents:</p>
+          <ul style="font-size: 0.7em; text-align: left; padding-left: 15px; line-height: 1.3;">
+            <li>Introduction & Guide from Scratch</li>
+            <li>Ch. 1: Algorithms and Logical Thinking</li>
+            <li>Ch. 2: Development Environments (VS Code, Laragon)</li>
+            <li>Ch. 3: Programming Paradigms</li>
+            <li>Ch. 4: Development Methodologies</li>
+            <li>Ch. 5: Version Control with Git and GitHub</li>
+            <li>Ch. 6: Front-End Development (HTML, CSS, JS)</li>
+            <li>Ch. 7: Back-End Development with PHP</li>
+            <li>Ch. 8: Databases and SQL</li>
+            <li>Ch. 9: Web Security and Best Practices</li>
+            <li>Ch. 10: Deployment and Lifecycle</li>
+          </ul>
+          <span class="page-number">1</span>
+        </div>
+      </div>
+
+      <!-- SHEET 2 (Pages 3 and 4) -->
+      <div class="page" style="z-index: 14;">
+        <div class="front">
+          <h2>What is Programming and What is it Used For?</h2>
+          <p><strong>Programming</strong> is giving precise instructions to a computer through code to perform specific tasks or solve problems automatically.</p>
+          <p><strong>What is it used for?</strong> It allows you to automate repetitive tasks, process massive amounts of data at high speeds, solve complex problems, and build interactive applications.</p>
+          <div class="illustration">
+            <svg viewBox="0 0 100 60">
+              <circle cx="30" cy="30" r="18" fill="#8c6d58" stroke="#e2c08d" stroke-width="1.5"/>
+              <text x="30" y="33" fill="#ffffff" font-size="6" text-anchor="middle">Logic</text>
+              <line x1="48" y1="30" x2="62" y2="30" stroke="#e2c08d" stroke-width="2" stroke-dasharray="2,2"/>
+              <polygon points="60,27 65,30 60,33" fill="#e2c08d"/>
+              <rect x="65" y="15" width="28" height="30" rx="3" fill="#3b2f2f" stroke="#e2c08d" stroke-width="1.5"/>
+              <text x="79" y="32" fill="#e2c08d" font-size="5" font-family="monospace" text-anchor="middle">&lt;/&gt;</text>
+            </svg>
+          </div>
+          <span class="page-number">2</span>
+        </div>
+        <div class="back">
+          <h2>What Can We Program?</h2>
+          <p>Programming encompasses various fields of modern software:</p>
+          <ul style="font-size: 0.75em; text-align: left; padding-left: 15px; line-height: 1.4;">
+            <li><strong>Websites and Web Apps:</strong> E-commerce platforms, social networks, management systems.</li>
+            <li><strong>Mobile Applications:</strong> Tools for iOS and Android.</li>
+            <li><strong>Artificial Intelligence:</strong> Algorithms for predictive analysis and machine learning.</li>
+            <li><strong>Embedded Systems & IoT:</strong> Smart devices and robotics.</li>
+          </ul>
+          <div class="illustration">
+            <svg viewBox="0 0 100 50">
+              <rect x="10" y="10" width="22" height="30" rx="2" fill="#543d31" stroke="#e2c08d" stroke-width="1"/>
+              <text x="21" y="28" fill="#ffffff" font-size="4" text-anchor="middle">Web</text>
+              <rect x="39" y="10" width="18" height="30" rx="3" fill="#7a5c47" stroke="#e2c08d" stroke-width="1"/>
+              <text x="48" y="28" fill="#ffffff" font-size="4" text-anchor="middle">App</text>
+              <circle cx="78" cy="25" r="12" fill="#3b2f2f" stroke="#e2c08d" stroke-width="1"/>
+              <text x="78" y="27" fill="#e2c08d" font-size="4" text-anchor="middle">AI/IoT</text>
+            </svg>
+          </div>
+          <span class="page-number">3</span>
+        </div>
+      </div>
+
+      <!-- SHEET 3 (Pages 5 and 6) -->
+      <div class="page" style="z-index: 13;">
+        <div class="front">
+          <h2>How to Start Programming?</h2>
+          <p>To get started, you don't need an advanced math background; instead, follow an organized methodology:</p>
+          <ol style="font-size: 0.75em; text-align: left; padding-left: 15px; line-height: 1.4;">
+            <li><strong>Define a area:</strong> Web development is highly recommended due to its fast learning curve.</li>
+            <li><strong>Set up your environment:</strong> Code editor and web browser.</li>
+            <li><strong>Learn basic logic:</strong> Variables, conditionals, and loops.</li>
+            <li><strong>Build real projects:</strong> Apply what you learn by creating small applications.</li>
+          </ol>
+          <div class="illustration">
+            <svg viewBox="0 0 100 50">
+              <rect x="15" y="35" width="20" height="10" fill="#8c6d58"/>
+              <rect x="40" y="25" width="20" height="20" fill="#7a5c47"/>
+              <rect x="65" y="15" width="20" height="30" fill="#543d31" stroke="#e2c08d" stroke-width="1"/>
+              <text x="75" y="32" fill="#e2c08d" font-size="5" text-anchor="middle">Success!</text>
+            </svg>
+          </div>
+          <span class="page-number">4</span>
+        </div>
+        <div class="back">
+          <h2>Guide from Scratch: HTML, CSS, and JS</h2>
+          <p>The foundation of web development consists of three primary technologies:</p>
+          <p style="font-size: 0.75em; line-height: 1.4;">
+            <strong>1. HTML (Structure):</strong> Layouts the page elements (text, buttons, images).<br>
+            <strong>2. CSS (Styles):</strong> Defines visual presentation, colors, and responsive layouts.<br>
+            <strong>3. JavaScript (Logic):</strong> Provides dynamic behavior and response to user actions.
+          </p>
+          <div class="illustration">
+            <svg viewBox="0 0 100 50">
+              <rect x="8" y="15" width="26" height="25" rx="3" fill="#8c6d58"/>
+              <text x="21" y="30" fill="#ffffff" font-size="5" font-weight="bold" text-anchor="middle">HTML</text>
+              <rect x="37" y="15" width="26" height="25" rx="3" fill="#543d31"/>
+              <text x="50" y="30" fill="#ffffff" font-size="5" font-weight="bold" text-anchor="middle">CSS</text>
+              <rect x="66" y="15" width="26" height="25" rx="3" fill="#3b2f2f" stroke="#e2c08d" stroke-width="1"/>
+              <text x="79" y="30" fill="#e2c08d" font-size="5" font-weight="bold" text-anchor="middle">JS</text>
+            </svg>
+          </div>
+          <span class="page-number">5</span>
+        </div>
+      </div>
+
+      <!-- SHEET 4 (Pages 7 and 8) -->
+      <div class="page" style="z-index: 12;">
+        <div class="front">
+          <h2>Ch. 1: Algorithms and Logic</h2>
+          <p>An <strong>algorithm</strong> is a finite, ordered, and unambiguous sequence of steps designed to solve a specific problem.</p>
+          <p><strong>Key Concepts:</strong></p>
+          <ul style="font-size: 0.75em; text-align: left; padding-left: 15px; line-height: 1.3;">
+            <li><strong>Variables:</strong> Memory spaces used to store changing data.</li>
+            <li><strong>Constants:</strong> Fixed values that remain constant during execution.</li>
+            <li><strong>Conditionals (if/else):</strong> Make decisions depending on whether a condition is met.</li>
+          </ul>
+          <div class="illustration">
+            <svg viewBox="0 0 100 50">
+              <rect x="10" y="20" width="25" height="20" rx="3" fill="#8c6d58" stroke="#e2c08d" stroke-width="1"/>
+              <text x="22" y="32" fill="#ffffff" font-size="4" text-anchor="middle">Input</text>
+              <path d="M36,30 L44,30" stroke="#e2c08d" stroke-width="1.5"/>
+              <polygon points="45,20 55,30 45,40" fill="#543d31" stroke="#e2c08d" stroke-width="1"/>
+              <path d="M56,30 L64,30" stroke="#e2c08d" stroke-width="1.5"/>
+              <rect x="65" y="20" width="25" height="20" rx="3" fill="#3b2f2f" stroke="#e2c08d" stroke-width="1"/>
+              <text x="77" y="32" fill="#e2c08d" font-size="4" text-anchor="middle">Output</text>
+            </svg>
+          </div>
+          <span class="page-number">6</span>
+        </div>
+        <div class="back">
+          <h2>1.2 Loop Structures</h2>
+          <p>Loops or iterations allow executing a block of code multiple times while a specified condition holds true.</p>
+          <ul style="font-size: 0.75em; text-align: left; padding-left: 15px; line-height: 1.4;">
+            <li><strong>For Loop:</strong> Used when the exact number of iterations is known beforehand.</li>
+            <li><strong>While Loop:</strong> Executes code as long as the condition remains true.</li>
+            <li><strong>Do-While Loop:</strong> Guarantees at least one execution before evaluating the condition.</li>
+          </ul>
+          <div class="illustration">
+            <svg viewBox="0 0 100 50">
+              <path d="M 30 25 A 15 15 0 1 1 70 25" fill="none" stroke="#e2c08d" stroke-width="2"/>
+              <polygon points="68,20 73,27 65,27" fill="#e2c08d"/>
+              <text x="50" y="45" fill="#ffffff" font-size="5" text-anchor="middle">Loop Iteration</text>
+            </svg>
+          </div>
+          <span class="page-number">7</span>
+        </div>
+      </div>
+
+      <!-- SHEET 5 (Pages 9 and 10) -->
+      <div class="page" style="z-index: 11;">
+        <div class="front">
+          <h2>Ch. 2: Development Environments</h2>
+          <p><strong>2.1 Visual Studio & VS Code:</strong> To write code efficiently, an editor is required. VS Code is a lightweight, fast, and highly expandable editor via plugins, perfect for web. Visual Studio is a full IDE geared towards complex desktop or enterprise apps.</p>
+          <div class="illustration">
+            <svg viewBox="0 0 100 60">
+              <rect x="5" y="5" width="90" height="50" rx="4" fill="#2d2d2d" stroke="#e2c08d" stroke-width="1.5"/>
+              <rect x="5" y="5" width="90" height="10" rx="4" fill="#3c3c3c"/>
+              <circle cx="12" cy="10" r="2" fill="#ff5f56"/>
+              <circle cx="18" cy="10" r="2" fill="#ffbd2e"/>
+              <circle cx="24" cy="10" r="2" fill="#27c93f"/>
+              <text x="12" y="25" fill="#e2c08d" font-size="6" font-family="monospace">&lt;code&gt;</text>
+              <line x1="12" y1="32" x2="60" y2="32" stroke="#8c6d58" stroke-width="2"/>
+              <line x1="12" y1="38" x2="80" y2="38" stroke="#7a5c47" stroke-width="2"/>
+            </svg>
+          </div>
+          <span class="page-number">8</span>
+        </div>
+        <div class="back">
+          <h2>2.2 Local Servers: Laragon</h2>
+          <p>Laragon is a development environment for Windows that simulates a real web server on your machine. It integrates key tools such as:</p>
+          <ul style="font-size: 0.75em; text-align: left; padding-left: 15px; line-height: 1.3;">
+            <li><strong>Apache / Nginx:</strong> Servers handling HTTP requests.</li>
+            <li><strong>PHP:</strong> Server-side processing language.</li>
+            <li><strong>MySQL:</strong> Relational database management system.</li>
+          </ul>
+          <div class="illustration">
+            <svg viewBox="0 0 100 60">
+              <rect x="10" y="10" width="35" height="40" rx="3" fill="#3b2f2f" stroke="#e2c08d" stroke-width="1.5"/>
+              <circle cx="18" cy="18" r="2" fill="#27c93f"/>
+              <line x1="18" y1="28" x2="37" y2="28" stroke="#e2c08d" stroke-width="2"/>
+              <path d="M50,30 L60,30" stroke="#e2c08d" stroke-width="2" stroke-dasharray="2,2"/>
+              <ellipse cx="75" cy="18" rx="15" ry="5" fill="#8c6d58" stroke="#e2c08d" stroke-width="1"/>
+              <path d="M60,18 L60,42 A15,5 0 0,0 90,42 L90,18" fill="#543d31" stroke="#e2c08d" stroke-width="1"/>
+            </svg>
+          </div>
+          <span class="page-number">9</span>
+        </div>
+      </div>
+
+      <!-- SHEET 6 (Pages 11 and 12) -->
+      <div class="page" style="z-index: 10;">
+        <div class="front">
+          <h2>Ch. 3: Programming Paradigms</h2>
+          <p><strong>3.1 Sequential Programming:</strong> The most direct approach. Instructions execute strictly linear, one after another, from top to bottom of the file.</p>
+          <div class="illustration">
+            <svg viewBox="0 0 100 80">
+              <rect x="30" y="5" width="40" height="15" rx="3" fill="#8c6d58" stroke="#e2c08d" stroke-width="1.5"/>
+              <text x="50" y="15" fill="#ffffff" font-size="5" text-anchor="middle">Step 1</text>
+              <line x1="50" y1="20" x2="50" y2="30" stroke="#e2c08d" stroke-width="2"/>
+              <rect x="30" y="33" width="40" height="15" rx="3" fill="#543d31" stroke="#e2c08d" stroke-width="1.5"/>
+              <text x="50" y="43" fill="#ffffff" font-size="5" text-anchor="middle">Step 2</text>
+              <line x1="50" y1="48" x2="50" y2="58" stroke="#e2c08d" stroke-width="2"/>
+              <rect x="30" y="61" width="40" height="15" rx="3" fill="#7a5c47" stroke="#e2c08d" stroke-width="1.5"/>
+              <text x="50" y="71" fill="#ffffff" font-size="5" text-anchor="middle">Step 3</text>
+            </svg>
+          </div>
+          <span class="page-number">10</span>
+        </div>
+        <div class="back">
+          <h2>3.2 Event-Driven Programming</h2>
+          <p>In this paradigm, program execution is determined by external events such as user clicks, key presses, or network responses. Widely used in graphical interfaces and modern web applications.</p>
+          <div class="illustration">
+            <svg viewBox="0 0 100 80">
+              <circle cx="25" cy="40" r="15" fill="#8c6d58" stroke="#e2c08d" stroke-width="1.5"/>
+              <text x="25" y="42" fill="#ffffff" font-size="5" text-anchor="middle">Click Event</text>
+              <path d="M42,40 L58,40" stroke="#e2c08d" stroke-width="2" stroke-dasharray="2,2"/>
+              <rect x="63" y="25" width="30" height="30" rx="4" fill="#3b2f2f" stroke="#e2c08d" stroke-width="1.5"/>
+              <text x="78" y="42" fill="#e2c08d" font-size="5" text-anchor="middle">Handler</text>
+            </svg>
+          </div>
+          <span class="page-number">11</span>
+        </div>
+      </div>
+
+      <!-- SHEET 7 (Pages 13 and 14) -->
+      <div class="page" style="z-index: 9;">
+        <div class="front">
+          <h2>3.3 Object-Oriented Programming (OOP)</h2>
+          <p>Organizes code around <strong>Classes</strong> (blueprints) and <strong>Objects</strong> (instances). Built upon four main pillars: Encapsulation, Inheritance, Abstraction, and Polymorphism.</p>
+          <div class="illustration">
+            <svg viewBox="0 0 100 80">
+              <rect x="10" y="15" width="35" height="50" fill="none" stroke="#e2c08d" stroke-width="1.5" stroke-dasharray="3,3"/>
+              <text x="27" y="28" fill="#e2c08d" font-size="6" text-anchor="middle">CLASS</text>
+              <line x1="15" y1="33" x2="40" y2="33" stroke="#e2c08d" stroke-width="1"/>
+              <text x="27" y="45" fill="#ffffff" font-size="4" text-anchor="middle">- Attributes</text>
+              <text x="27" y="55" fill="#ffffff" font-size="4" text-anchor="middle">+ Methods()</text>
+              <path d="M48,40 L58,40" stroke="#e2c08d" stroke-width="2"/>
+              <rect x="61" y="20" width="32" height="40" rx="3" fill="#7a5c47" stroke="#e2c08d" stroke-width="1.5"/>
+              <text x="77" y="38" fill="#ffffff" font-size="5" text-anchor="middle">OBJECT</text>
+            </svg>
+          </div>
+          <span class="page-number">12</span>
+        </div>
+        <div class="back">
+          <h2>Ch. 4: Development Methodologies</h2>
+          <p><strong>4.1 The Spiral Model:</strong> Software development methodology focused on risk management. Combines iterative nature with systematic aspects of the waterfall model.</p>
+          <p style="font-size: 0.75em;">Main phases: Planning, Risk Analysis, Engineering, and Customer Evaluation.</p>
+          <div class="illustration">
+            <svg viewBox="0 0 100 80">
+              <path d="M50,40 A5,5 0 0,1 55,40 A10,10 0 0,1 45,40 A15,15 0 0,1 60,40 A20,20 0 0,1 35,40 A25,25 0 0,1 70,40" fill="none" stroke="#e2c08d" stroke-width="2"/>
+              <polygon points="68,36 74,40 68,44" fill="#e2c08d"/>
+              <line x1="50" y1="10" x2="50" y2="70" stroke="#7a5c47" stroke-width="1"/>
+            </svg>
+          </div>
+          <span class="page-number">13</span>
+        </div>
+      </div>
+
+      <!-- SHEET 8 (Pages 15 and 16) -->
+      <div class="page" style="z-index: 8;">
+        <div class="front">
+          <h2>4.2 Agile Methodologies: Scrum</h2>
+          <p>Scrum divides work into short iterations known as <strong>Sprints</strong> (1 to 4 weeks long). Encourages fast value delivery, continuous collaboration, and adaptability to change.</p>
+          <div class="illustration">
+            <svg viewBox="0 0 100 60">
+              <circle cx="50" cy="30" r="20" fill="none" stroke="#e2c08d" stroke-width="2" stroke-dasharray="5,2"/>
+              <text x="50" y="32" fill="#ffffff" font-size="5" text-anchor="middle">Sprint</text>
+            </svg>
+          </div>
+          <span class="page-number">14</span>
+        </div>
+        <div class="back">
+          <h2>Ch. 5: Version Control with Git</h2>
+          <p><strong>Git</strong> is a distributed version control system that tracks code changes. Allows rolling back to previous versions and working collaboratively using branches.</p>
+          <p><strong>GitHub:</strong> Cloud platform for hosting Git repositories.</p>
+          <div class="illustration">
+            <svg viewBox="0 0 100 60">
+              <line x1="20" y1="30" x2="80" y2="30" stroke="#e2c08d" stroke-width="2"/>
+              <circle cx="30" cy="30" r="4" fill="#8c6d58" stroke="#e2c08d" stroke-width="1"/>
+              <path d="M 30 30 Q 45 10 60 10 L 70 10" fill="none" stroke="#e2c08d" stroke-width="1.5"/>
+              <circle cx="60" cy="10" r="4" fill="#543d31" stroke="#e2c08d" stroke-width="1"/>
+            </svg>
+          </div>
+          <span class="page-number">15</span>
+        </div>
+      </div>
+
+      <!-- SHEET 9 (Pages 17 and 18) -->
+      <div class="page" style="z-index: 7;">
+        <div class="front">
+          <h2>Ch. 6: Front-End Development</h2>
+          <p>Includes the user interface visible in the web browser.</p>
+          <p style="font-size: 0.75em;">
+            <strong>HTML:</strong> Semantic structure using tags (&lt;header&gt;, &lt;main&gt;, &lt;footer&gt;).<br>
+            <strong>CSS:</strong> Styling, Flexbox, and Grid for flexible layouts (Responsive Design).
+          </p>
+          <div class="illustration">
+            <svg viewBox="0 0 100 80">
+              <polygon points="20,15 23,55 35,60 47,55 50,15" fill="#8c6d58" stroke="#e2c08d" stroke-width="1"/>
+              <text x="33" y="38" fill="#ffffff" font-size="7" font-weight="bold" text-anchor="middle">HTML</text>
+              <polygon points="53,15 56,55 68,60 80,55 83,15" fill="#543d31" stroke="#e2c08d" stroke-width="1"/>
+              <text x="68" y="38" fill="#ffffff" font-size="7" font-weight="bold" text-anchor="middle">CSS</text>
+            </svg>
+          </div>
+          <span class="page-number">16</span>
+        </div>
+        <div class="back">
+          <h2>6.2 JavaScript and the DOM</h2>
+          <p>The Document Object Model (DOM) is the tree-like representation the browser makes of HTML. JavaScript manipulates the DOM to change content, styles, and handle user events in real time.</p>
+          <div class="illustration">
+            <svg viewBox="0 0 100 60">
+              <rect x="10" y="5" width="80" height="50" rx="3" fill="#f0e7db" stroke="#543d31" stroke-width="1.5"/>
+              <rect x="10" y="5" width="80" height="10" rx="3" fill="#7a5c47"/>
+              <rect x="20" y="22" width="60" height="8" rx="2" fill="#e2c08d"/>
+              <rect x="20" y="34" width="25" height="15" rx="2" fill="#8c6d58"/>
+            </svg>
+          </div>
+          <span class="page-number">17</span>
+        </div>
+      </div>
+
+      <!-- SHEET 10 (Pages 19 and 20) -->
+      <div class="page" style="z-index: 6;">
+        <div class="front">
+          <h2>Ch. 7: Back-End Development with PHP</h2>
+          <p>PHP processes requests on the server before sending results back to the browser. It manages authentication, form data validation, and transaction handling.</p>
+          <div class="illustration">
+            <svg viewBox="0 0 100 80">
+              <rect x="10" y="25" width="25" height="30" rx="2" fill="#543d31" stroke="#e2c08d" stroke-width="1"/>
+              <text x="22" y="42" fill="#ffffff" font-size="5" text-anchor="middle">Client</text>
+              <path d="M38,33 L62,33" stroke="#e2c08d" stroke-width="1.5"/>
+              <polygon points="60,31 65,33 60,35" fill="#e2c08d"/>
+              <rect x="65" y="20" width="25" height="40" rx="2" fill="#3b2f2f" stroke="#e2c08d" stroke-width="1"/>
+              <text x="77" y="42" fill="#e2c08d" font-size="5" text-anchor="middle">PHP</text>
+            </svg>
+          </div>
+          <span class="page-number">18</span>
+        </div>
+        <div class="back">
+          <h2>7.2 Full-Stack Integration</h2>
+          <p>Combining the client side (HTML/CSS/JS) with server logic (PHP) creates complete and interactive applications known as Full-Stack developments.</p>
+          <div class="illustration">
+            <svg viewBox="0 0 100 60">
+              <rect x="5" y="15" width="25" height="30" rx="3" fill="#8c6d58"/>
+              <text x="17" y="32" fill="#ffffff" font-size="4" text-anchor="middle">Front</text>
+              <line x1="32" y1="30" x2="38" y2="30" stroke="#e2c08d" stroke-width="1.5"/>
+              <rect x="40" y="15" width="25" height="30" rx="3" fill="#543d31"/>
+              <text x="52" y="32" fill="#ffffff" font-size="4" text-anchor="middle">Back</text>
+            </svg>
+          </div>
+          <span class="page-number">19</span>
+        </div>
+      </div>
+
+      <!-- SHEET 11 (Pages 21 and 22) -->
+      <div class="page" style="z-index: 5;">
+        <div class="front">
+          <h2>Ch. 8: Databases and SQL</h2>
+          <p>Relational databases organize information into structured tables with rows and columns using <strong>SQL</strong> language.</p>
+          <p style="font-size: 0.75em;">Main statements: <code>SELECT</code>, <code>INSERT</code>, <code>UPDATE</code>, <code>DELETE</code>.</p>
+          <div class="illustration">
+            <svg viewBox="0 0 100 60">
+              <ellipse cx="50" cy="15" rx="25" ry="8" fill="#8c6d58" stroke="#e2c08d" stroke-width="1"/>
+              <path d="M25,15 L25,45 A25,8 0 0,0 75,45 L75,15" fill="#543d31" stroke="#e2c08d" stroke-width="1"/>
+              <ellipse cx="50" cy="30" rx="25" ry="8" fill="none" stroke="#e2c08d" stroke-width="1"/>
+              <ellipse cx="50" cy="45" rx="25" ry="8" fill="none" stroke="#e2c08d" stroke-width="1"/>
+            </svg>
+          </div>
+          <span class="page-number">20</span>
+        </div>
+        <div class="back">
+          <h2>8.2 Table Relationships</h2>
+          <p>Through Primary Keys and Foreign Keys, tables can be linked together to maintain data integrity without unnecessary redundancy.</p>
+          <div class="illustration">
+            <svg viewBox="0 0 100 50">
+              <rect x="10" y="10" width="30" height="30" fill="#3b2f2f" stroke="#e2c08d" stroke-width="1"/>
+              <line x1="40" y1="25" x2="60" y2="25" stroke="#e2c08d" stroke-width="1.5" stroke-dasharray="2,2"/>
+              <rect x="60" y="10" width="30" height="30" fill="#3b2f2f" stroke="#e2c08d" stroke-width="1"/>
+            </svg>
+          </div>
+          <span class="page-number">21</span>
+        </div>
+      </div>
+
+      <!-- SHEET 12 (Pages 23 and 24) -->
+      <div class="page" style="z-index: 4;">
+        <div class="front">
+          <h2>Ch. 9: Web Security</h2>
+          <p>Security must be considered from the start of development. Common vulnerabilities:</p>
+          <ul style="font-size: 0.75em; text-align: left; padding-left: 15px; line-height: 1.3;">
+            <li><strong>SQL Injection:</strong> Prevented by using prepared statements.</li>
+            <li><strong>XSS (Cross-Site Scripting):</strong> Prevented by sanitizing user input.</li>
+          </ul>
+          <div class="illustration">
+            <svg viewBox="0 0 100 60">
+              <path d="M50,10 L75,20 L75,40 Q50,55 50,55 Q50,55 25,40 L25,20 Z" fill="#7a5c47" stroke="#e2c08d" stroke-width="1.5"/>
+            </svg>
+          </div>
+          <span class="page-number">22</span>
+        </div>
+        <div class="back">
+          <h2>9.2 Code Best Practices</h2>
+          <p>Writing Clean Code enhances system maintainability and scalability:</p>
+          <ul style="font-size: 0.75em; text-align: left; padding-left: 15px; line-height: 1.3;">
+            <li>Use descriptive names for variables and functions.</li>
+            <li>Keep functions short with a single responsibility.</li>
+            <li>Comment code only when strictly necessary.</li>
+          </ul>
+          <div class="illustration">
+            <svg viewBox="0 0 100 50">
+              <rect x="20" y="10" width="60" height="30" rx="3" fill="#3b2f2f" stroke="#e2c08d" stroke-width="1"/>
+              <text x="50" y="28" fill="#e2c08d" font-size="5" font-family="monospace" text-anchor="middle">Clean Code</text>
+            </svg>
+          </div>
+          <span class="page-number">23</span>
+        </div>
+      </div>
+
+      <!-- SHEET 13 (Pages 25 and 26) -->
+      <div class="page" style="z-index: 3;">
+        <div class="front">
+          <h2>Ch. 10: Deployment and Maintenance</h2>
+          <p>Once developed and tested in the local environment (Laragon), the application is deployed to a production server (Hosting / VPS) with a domain name and SSL certificate (HTTPS).</p>
+          <div class="illustration">
+            <svg viewBox="0 0 100 60">
+              <path d="M50,15 Q65,35 65,55 L35,55 Q35,35 50,15 Z" fill="#7a5c47" stroke="#e2c08d" stroke-width="1.5"/>
+              <circle cx="50" cy="35" r="5" fill="#e2c08d"/>
+            </svg>
+          </div>
+          <span class="page-number">24</span>
+        </div>
+        <div class="back">
+          <h2>Software Lifecycle</h2>
+          <p>Development doesn't end with deployment. It includes error monitoring, security updates, performance optimization, and ongoing user support.</p>
+          <div class="illustration">
+            <svg viewBox="0 0 100 60">
+              <circle cx="50" cy="30" r="22" fill="none" stroke="#e2c08d" stroke-width="2"/>
+              <text x="50" y="32" fill="#ffffff" font-size="4" text-anchor="middle">Maintenance</text>
+            </svg>
+          </div>
+          <span class="page-number">25</span>
+        </div>
+      </div>
+
+      <!-- SHEET 14 (Pages 27 and 28) -->
+      <div class="page" style="z-index: 2;">
+        <div class="front">
+          <h2>Final Summary</h2>
+          <p>With knowledge of logic, code editors, version control, paradigms, front-end, back-end, and databases, you have a solid foundation to build full-stack tech solutions.</p>
+          <div class="illustration">
+            <svg viewBox="0 0 100 80">
+              <circle cx="50" cy="40" r="25" fill="none" stroke="#e2c08d" stroke-width="3"/>
+              <polygon points="50,20 55,35 70,40 55,45 50,60 45,45 30,40 45,35" fill="#8c6d58"/>
+            </svg>
+          </div>
+          <span class="page-number">26</span>
+        </div>
+        <div class="back">
+          <h2>Credits and Closing</h2>
+          <p>By Machuca Vera Natalia 5D<br>Technical Learning Guide (2026).</p>
+          <div class="illustration">
+            <svg viewBox="0 0 100 70">
+              <circle cx="50" cy="30" r="16" fill="#8c6d58" stroke="#e2c08d" stroke-width="1.5"/>
+              <polygon points="42,42 38,62 50,55 62,62 58,42" fill="#543d31"/>
+            </svg>
+          </div>
+          <span class="page-number">27</span>
+        </div>
+      </div>
+
+      <!-- SHEET 15 (Pages 29 and 30 / BACK COVER) -->
+      <div class="page" style="z-index: 1;">
+        <div class="front cover-back">
+          <h2>END</h2>
+          <div class="illustration" style="width: 120px; height: 120px; margin: 0 auto;">
+            <svg viewBox="0 0 100 100" style="width: 100%; height: 100%;">
+              <polygon points="50,15 61,38 85,38 66,52 73,75 50,60 27,75 34,52 15,38 39,38" fill="#e2c08d"/>
+            </svg>
+          </div>
+          <p style="text-align: center; color: #e2c08d; margin-top: 10px;">Happy Coding!</p>
+        </div>
+        <div class="back cover-back">
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <script src="bok.Js"></script>
+</body>
+</html>
